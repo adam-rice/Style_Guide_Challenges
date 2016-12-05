@@ -25,7 +25,7 @@
 </header>`
 
 #### CSS
-`h1 {
+h1 {
   display: inline-block;
   margin-left: 5px;
 }
@@ -79,7 +79,7 @@ ul.topnav li.icon {
   display: none;
 }
 
-@media screen and (max-width:680px) {
+//@media screen and (max-width:680px) {
   ul.topnav li:not(:first-child) {
     display: none;
   }
@@ -90,7 +90,7 @@ ul.topnav li.icon {
   }
 }
 
-@media screen and (max-width:680px) {
+//@media screen and (max-width:680px) {
   ul.topnav.responsive {
     position: relative;
   }
@@ -114,7 +114,7 @@ ul.topnav li.icon {
   button {
     width: 100%;
   }
-}`
+}
 
 #### Scripts
 `function myFunction() {

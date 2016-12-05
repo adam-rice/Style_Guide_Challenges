@@ -1,13 +1,37 @@
 body {
   background-color: #CCCC99;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+img {
+  height: 22px;
+  width: 22px;
+}
+
+button {
+  background-color: #666633;
+  border: none;
+  color: #FFFFFF;
+  font-size: 23px;
+  display: inline-block;
+  outline: none;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #666633;
+  background-color: #666633;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
 }
 
 ul.topnav li {
@@ -15,17 +39,18 @@ ul.topnav li {
 }
 
 ul.topnav li a {
-    display: inline-block;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 17px;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 26px;
+  padding: 14px 16px;
+  transition: 0.3s;
+  text-decoration: none;
+  text-align: center;
 }
 
-ul.topnav li a:hover {
+ul.topnav li a:hover, ul.topnav li button:hover  {
   background-color: #990033;
+  cursor: pointer;
 }
 
 ul.topnav li.icon {
@@ -59,8 +84,12 @@ ul.topnav li.icon {
     display: inline;
   }
 
-  ul.topnav.responsive li a {
+  ul.topnav.responsive li a, ul.topnav.responsive li button {
     display: block;
     text-align: left;
+  }
+
+  button {
+    width: 100%;
   }
 }
